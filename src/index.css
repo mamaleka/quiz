@@ -1,13 +1,67 @@
-body {
+*{
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: #060625;
+  color: #b5b5ec;
+}
+
+header {
+  font-size: 2rem;
+  padding-block: .5rem;
+  margin-block-end: .5rem;
+  text-align: center;
+  border-bottom: #7474b1 solid 1px;
+  box-shadow: 0px 0px 4px 4px #9b9bf0;
+}
+main{
+  min-height: 80vh;
+}
+
+footer{
+  font-size: .75rem;
+  text-align: center;
+}
+.quiz-options-form {
+  text-align: center;
+  max-width: 500px;
+  background-color:#0f0f44;
+  margin: auto;
+  margin-top: 6rem;
+  padding: 3rem;
+  border-radius: 8px;
+}
+.quiz-options-form-body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  padding-bottom: 3rem;
+
+}
+
+.quiz-options-form-body label {
+  text-align: end;
+}
+
+.quiz-options-form button {
+  width: 200px;
+  padding: .25rem;
+  color: #b5b5ec;
+  background-color: #0f0f44;
+  border: #b5b5ec 2px solid;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.quiz-options-form button:hover {
+  width: 200px;
+  padding: .25rem;
+  color: #0f0f44;
+  background-color: #b5b5ec;
+  border: #0f0f44 2px solid;
+  border-radius: 3px;
 }
